@@ -35,9 +35,11 @@ const requestLogger = (request, response, next) => {
 }
 app.use(requestLogger)
 
+/*
 app.get('/', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
+*/
 
 const generateId = () => {
   const maxId = notes.length > 0
